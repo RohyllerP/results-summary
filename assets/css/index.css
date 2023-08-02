@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --gray: #D9CCFF;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--pale-blue);
+}
+.main{
+   
+}
+.main .main-content{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0px 20px;
+}
+.main .main-content .content-box{
+    display: flex;
+}
+.main .main-content .content-box .first-content{
+    background: linear-gradient(#6542FE,#332DE9);
+    /* background: linear-gradient(183deg, rgba(83,80,238,1) 23%, rgba(46,43,233,1) 68%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px 0px;
+    width: 40%;
+}
+.main .main-content .content-box .first-content .circule-purple{
+    padding: 23px 40px;
+    text-align: center;
+    border-radius: 50%;
+    /* background: linear-gradient(#4532E8,#432EE1); */
+    background: linear-gradient(#3823da,#4532E8); 
+    color: white;
+    margin: 20px 0px;
+}
+.main .main-content .content-box .first-content .circule-purple > h5{
+    font-size: 40px;
+    font-weight: 700;
+}
+.main .main-content .content-box .first-content .circule-purple > p{
+    font-size: 12px;
+    margin: 0px;
+    color: var(--gray);
+}
+.result-size{
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--light-lavender);
+}
+.span-result{
+    font-size: 16.2px;
+    color: var(--gray);
+}
+.p-text{
+    width: 50%;
+    font-size: 14px;
+    color: var(--gray);
+}
+.s-great{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+}
+.main .main-content .content-box .second-content{
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 50px 20px;
+    padding-top: 35px;
+    width: 60%;
+}
+.main .main-content .content-box .second-content .main-ul{ 
+    list-style: none;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.main .main-content .content-box .second-content .main-ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .main-content .content-box .second-content .main-ul li img{
+    padding-right: 5px;
+}
+.main .main-content .content-box .second-content .main-ul li div{
+    display: flex;
+    padding-left: 5px;
+}
+.main .main-content .content-box .second-content .main-ul li div:last-child p{
+    padding-left: 5px;
+}
+.main .main-content .content-box .second-content .main-ul li{
+    border-radius: 7px;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+.main-ul .first-li{
+    background-color: hsla(0, 100%, 67%,0.1);
+}
+.main-ul .second-li{
+    background-color: hsla(39, 100%, 56%,0.1);
+}
+.main-ul .tercer-li{
+    background-color: hsla(166, 100%, 37%,0.1);
+}
+.main-ul .cuarto-li{
+    background-color: hsla(241, 81%, 54%,0.1);
+}
+.main-ul .cuarto-li > div:first-child span{
+    color: hsl(241, 81%, 54%);
+}
+.main-ul .tercer-li > div:first-child span{
+    color: var(--green-teal);
+}
+.main-ul .second-li > div:first-child span{
+    color: var(--orange-yellow);
+}
+.main-ul .first-li > div:first-child span{
+    color: var(--light-red);
+    padding-right: 70px;
+}
+.m-text-gray{
+    color: rgb(131, 130, 130);
+}
+.btn{
+    padding-top: 20px;
+}
+.btn-continue{
+    padding: 13px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: var(--dark-gray-blue);
+    width: 100%;
+}
+.btn-continue:hover{
+    background: linear-gradient(#6542FE,#332DE9);
+}
+
+@media screen and (max-width: 670px){
+    .main .main-content .content-box .first-content{
+        width: 100%;
+    }
+    .main .main-content .content-box .second-content{
+        width: 100%;
+    }
+    .main .main-content .content-box{
+        display: block;
+    }
+}
+@media screen and (max-width: 450px){
+    .main .main-content{
+        margin: 0px;
+    }
+}
